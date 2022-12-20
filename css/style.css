@@ -1,0 +1,70 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; color: #fff;}
+ul, li {list-style-type: none;}
+a{text-decoration: none;}
+img {width: 100%;}
+.d-flex {display: flex; align-items: center}
+
+header {
+  background-color: #002198;
+  padding:60px;
+}
+
+nav h1 {margin-right: 30px;}
+
+nav ul li {margin: 0 10px; font-size:14px;}
+
+.main-content, .section-02{max-width: 1024px; margin: 30px auto;}
+.main-content-left, .main-content-right {width:50%;}
+.main-content-left h2 {margin: 50px 0; font-size: 48px; font-weight: normal;}
+.main-content-left .btn-area {margin: 60px 0 30px;}
+.btn-area .btn{margin-right: 10px; font-size: 0.875rem; padding: 0.75rem 1.5rem; cursor: pointer; border: none;border-radius: 0.75rem;min-height: 53px;}
+.btn-area .btn-1{color: #002198;}
+.btn-area .btn-2{border: #fff; background-color: transparent; border: 1px solid #fff;}
+
+.section-02 {color: dimgray; }
+.section-02 .main-content-left h2 {color: #000;}
+.section-02 .main-content-left p {color: dimgray;}
+.section-02 .main-content-right img {margin: 5%;}
+
+.help-widget {
+  max-width: 300px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  right: -300px;
+  z-index: 100;
+}
+.help-widget p {color: #000;}
+
+.aba-ajuda {cursor: pointer;padding: 10px 20px;position: absolute; left: -66px; top: 40%; background-color: #fff;border-radius: 14px 14px 0px 0px; transform: rotate(-90deg)}
+.aba-ajuda p {font-size: 16px; line-height:20px;}
+.aba-ajuda span img {width: 8px; transform: rotate(-90deg); margin-left: 5px; }
+
+.icons {height: auto; margin-right: 10px;}
+.icons_1 {width: 28px;}
+.icons_2 {width: 16px;}
+.icons_3 {width: 23px;}
+.icons_4 {width: 25px;}
+.widget_list {background-color:#fff; padding: 30px 20px; border-radius: 24.1635px 0px 0px 24.1635px;}
+.widget_list, .widget_list li {width: 100%;}
+.widget_list li a {display: flex; align-items: center; justify-content: center;}
+.widget_list li {border-top: 1px solid  #E5E5E5; padding: 10px 0;}
+.widget_list li:last-child{border-bottom: 1px solid  #E5E5E5;;}
+.widget_list li a p {font-size: 13px; line-height: 18px;}  
+.widget_list li a p span {color: #696969;}
+
+
+@media only screen and (max-width: 540px){
+  .d-flex {flex-direction: column;}
+  header {padding: 30px;}
+  #nav-ul {display: none;}
+
+  .main-content-left, .main-content-right {width: 100%; text-align: center}
+  .main-content, .section-02{max-width: 1024px; margin: 30px}
+  .main-content-left .btn-area {display: flex;}
+
+  .main-content-left h2 {font-size: 24px;}
+  .main-content-left p {font-size: 12px;}
+
+  .section-02 .main-content-right img {margin: 0;}
+}
